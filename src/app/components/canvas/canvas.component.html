@@ -1,0 +1,8 @@
+<div>
+  Largeur : <input type="range" min="10" max="100" [(ngModel)]="percentWidth" (input)="updateCanvasSize()">
+  Hauteur : <input type="range" min="10" max="200" [(ngModel)]="percentHeight" (input)="updateCanvasSize()">
+</div>
+<canvas #myCanvas
+        [attr.width]="canvasWidth"
+        [attr.height]="canvasHeight">
+</canvas>

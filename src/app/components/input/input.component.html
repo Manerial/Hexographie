@@ -1,0 +1,7 @@
+<input #textInput [(ngModel)]="message" placeholder="Tape ton texte">
+<div style="margin-top:10px;">
+  <button *ngFor="let char of specialChars" type="button" (click)="insertChar(char)">
+    {{ char }}
+  </button>
+</div>
+<app-canvas [text]="message"></app-canvas>

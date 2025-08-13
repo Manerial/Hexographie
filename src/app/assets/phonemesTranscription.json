@@ -1,0 +1,32 @@
+{
+  "consonants": {
+    "l": ["alveolar"],
+    "p": ["labial"],
+    "b": ["labial", "voiced"],
+    "m": ["labial", "nasal"],
+    "k": ["occlusive"],
+    "g": ["occlusive", "voiced"],
+    "ŋ": ["occlusive", "nasal"],
+    "t": ["alveolar", "dental"],
+    "d": ["alveolar", "dental", "voiced"],
+    "n": ["alveolar", "dental", "nasal"],
+    "s": ["fricative", "alveolar"],
+    "z": ["fricative", "alveolar", "voiced"],
+    "f": ["fricative", "labial", "dental"],
+    "v": ["fricative", "labial", "dental", "voiced"],
+    "χ": ["fricative", "occlusive"],
+    "ʁ": ["fricative", "occlusive", "voiced"],
+    "ʃ": ["fricative"],
+    "ʒ": ["fricative", "voiced"]
+  },
+  "vowels": {
+    "a":["top-right", "bottom-right"],
+    "ã":["top-left", "bottom-left"],
+    "e":["bottom-left", "top-right"],
+    "i":["bottom-left", "top-right", "top-left"],
+    "ɛ":["bottom-left", "top-right", "bottom-right"],
+    "o":["top-left", "bottom-right"],
+    "y":["top-left", "bottom-right", "top-right"],
+    "u":["top-left", "bottom-right", "bottom-left"]
+  }
+}
