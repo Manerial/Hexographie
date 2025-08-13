@@ -27,7 +27,7 @@ export class HexographieService {
       if (i === text.length - 1) {
         this.drawCharacter(ctx, ' ');
       }
-      if (this.isVowel(char) || char === ' ') {
+      if (this.isVowel(char) || char === ' ' || char === '.') {
         this.increaseIndex(ctx);
       }
     }
@@ -95,9 +95,13 @@ export class HexographieService {
     const topLeft = {x: centerX - radius, y: centerY - sideH / 2};
 
     const startEOW = {x: centerX, y: centerY - sideH / 2};
-    const endEOW = {x: centerX + radius / 2, y: centerY - sideH / 2 - radius / 2};
+    const endEOW = (this.line % 2 == 0)
+      ? {x: centerX + radius / 2, y: centerY - sideH / 2 - radius / 2}
+      : {x: centerX - radius / 2, y: centerY - sideH / 2 - radius / 2};
     const startEOP = {x: centerX, y: centerY + sideH / 2};
-    const endEOP = {x: centerX + radius / 2, y: centerY + sideH / 2 + radius / 2};
+    const endEOP = (this.line % 2 == 0)
+      ? {x: centerX + radius / 2, y: centerY + sideH / 2 + radius / 2}
+      : {x: centerX - radius / 2, y: centerY + sideH / 2 + radius / 2};
 
     const consonant = (consonants[char] || []).join(' ');
     const vowel = (vowels[char] || []).join(' ');
